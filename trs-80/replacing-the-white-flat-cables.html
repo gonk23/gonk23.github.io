@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <style>
+            img {
+              width: 50%;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>TRS-80 - Replacing the white flat cables</h1>
+        <p>
+            White flexible flat cables connect the floppy disk controller (FDC) and RS232 boards to the Model III mainboard.
+            Unfortunately the cables deteriorate with age and cause problems when you need to repeatedly insert/remove them (e.g. when making repairs to the computer).
+            The cable to the FDC was so bad that the FDC no longer functioned correctly.
+        </p>
+        <p>
+            The photo below shows a bad cable on the left, and a good cable on the right.
+        </p>
+        <img src="images/white-cables.jpg" alt="White cables">
+        <p>
+            Part 1 of Ian Mavric's "<a href="http://www.fabsitesuk.com/tandy/mavsbtsm.pdf" target="_blank">Building the Super Micro</a>"
+            article outlined a method to replace the flexible flat cables with readily available IDE cables.
+            Single strips of IDC pins (20 pins for each connector) would replace the existing connectors on the CPU, FDC, and RS232 boards.
+        </p>
+        <p>
+            Unsoldering the old connectors and completely removing all the solder from the PCB holes was done using a soldering iron and solder sucker,
+            however it was quite challenging and time consuming.
+            The IDC pins were thicker than the original connector's pins and therefore required all the solder to be removed from the PCB holes.
+            Care must be taken not to overheat the PCB solder pads to prevent them from coming off and also prevent possible component damage.
+            If you're not familiar with desoldering you should practise on some old boards first, or maybe get someone else to do it instead.
+        </p>
+        <p>
+            You can use standard 40 pin cables, commonly used with IDE hard disks, although you’ll only use one of the 20 pin rows of each cable.
+            Even though you can cut up existing spare IDE hard disk cables, I found the length to be too long to neatly fit inside the system so
+            I purchased a pair of 10cm cables from eBay (search for "2pcs FC40P 40Pin IDC Socket Extension Flat Ribbon Cable 10cm"), see photo below.
+        </p>
+        <img src="images/short-idc-40-pin-cables.jpg" alt="Short IDC 40-pin cables">
+        <p>
+            I removed the retaining clip from the cable at one end, and connected that to the new connector on the CPU board.
+            The other end of the cable (with retaining clip still intact) was connected to the FDC or RS232 board as appropriate.
+        </p>
+        <p>
+            Here is a photo of the main board with the new IDE cables at the top.
+        </p>
+        <img src="images/mainboard-cables-replaced.jpg" alt="Mainboard cables replaced">
+        <p>
+            For completeness here are the before and after photos of the individual boards, without cables connected.
+        </p>
+        <p>
+            CPU board before:
+        </p>
+        <img src="images/cpu-1.jpg" alt="CPU board before">
+        <p>
+            CPU board after:
+        </p>
+        <img src="images/cpu-with-idc-1.jpg" alt="CPU board after">
+        <p>
+            Floppy disk controller board before:
+        </p>
+        <img src="images/fdc-1.jpg" alt="FDC before">
+        <p>
+            Floppy disk controller board after:
+        </p>
+        <img src="images/fdc-with-idc-2.jpg" alt="FDC after">
+        <p>
+            RS232 board before:
+        </p>
+        <img src="images/rs232-3.jpg" alt="RS232 board before">
+        <p>
+            RS232 board after:
+        </p>
+        <img src="images/rs232-with-idc-1.jpg" alt="RS232 board after">
+    </body>
+</html>
