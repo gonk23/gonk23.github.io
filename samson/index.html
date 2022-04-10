@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <style>
+            img {
+              width: 50%;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Samson MediaOne BT4</h1>
+        <img src="images/Samson_front_dual.jpg" alt="Samson front dual">
+        <p>
+            These active speakers had developed a fault where the right speaker was not working.<br />
+            Apparently this is a common fault most likely due to a problematic headphone jack which affects the BT3, BT4, and BT5 models.<br />
+            Sometimes inserting a plug in/out of the jack or cleaning it fixes the problem, however I found that after a while, even this didn't help.<br />
+            <br />
+            This page describes a method to bypass the headphone jack so both speakers work again, however the headphone jack will no longer work.<br />
+            A proper fix would replace the headphone jack, however unfortunately it is glued into the case so I didn't think it was worth demolishing the case to do this.<br />
+            <br />
+            Thanks to this <a href="https://gearspace.com/board/audio-student-engineering-production-question-zone/993710-samson-mediaone-bt5-broken.html">Gearspace post</a> for the idea.
+        </p>
+        <p>
+            First remove the outer screws from the back of the right speaker and wiggle out the main board.
+        </p>
+        <img src="images/Samson_back.jpg" alt="Samson back">
+        <p>
+            Take note (e.g. by taking a photo) of how the cables are plugged into the main board, and then unplug the cables to free the main board from the case.
+        </p>
+        <img src="images/Samson_cables.jpg" alt="Samson cables">
+        <p>
+            On the main board, locate connector CN3-A which the headphone jack cables were plugged into. To implement this fix, you'll want to short the 2 upper pins to each other and the 2 lower pins to each other, leaving the middle pin.
+        </p>
+        <img src="images/Samson_boards.jpg" alt="Samson boards">
+        <p>
+            Here's a close-up of CN3-A.
+        </p>
+        <img src="images/Samson_connector.jpg" alt="Samson connector">
+        <p>
+            In order to short the pins, I used old motherboard jumper caps as shown. These jumper caps just connect 2 pins together; they're often black but mine are red.
+        </p>
+        <img src="images/Samson_jumper_caps.jpg" alt="Samson jumper caps">
+        <p>
+            Here's a closeup of the jumper caps.
+        </p>
+        <img src="images/Samson_jumper_caps_closeup.jpg" alt="Samson jumper caps closeup">
+        <p>
+            Now plug in all the cables (except for the headphone jack cables connector) and screw the unit back together again.
+        </p>
+    </body>
+</html>
